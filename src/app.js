@@ -2,7 +2,10 @@ import express from "express";
 const app = express();
 import cors from "cors";
 
-const allowedOrigins = ["https://gautamraj.vercel.app"];
+const allowedOrigins = [
+  "https://gautamraj.vercel.app",
+  "http://localhost:3000",
+];
 
 app.use(
   cors({
