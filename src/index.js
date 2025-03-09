@@ -1,5 +1,5 @@
-import app from "./app";
-import { config } from "./config/config";
+import app from "./app.js";
+import { config } from "./config/config.js";
 
 // Check for required environment variables
 if (!config.github.token) {
