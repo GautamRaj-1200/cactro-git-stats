@@ -1,5 +1,16 @@
 import express from "express";
 const app = express();
+import cors from "cors";
+
+const allowedOrigins = ["https://gautamraj.vercel.app"];
+
+app.use(
+  cors({
+    origin: allowedOrigins,
+    methods: ["GET", "POST"],
+    credentials: true,
+  })
+);
 
 // Middleware
 app.use(express.json());
