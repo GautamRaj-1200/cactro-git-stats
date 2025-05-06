@@ -3,7 +3,7 @@ const app = express();
 import cors from "cors";
 
 const allowedOrigins = [
-  "https://gautamraj.vercel.app",
+  "https://gautamraj.space",
   "http://localhost:3000",
 ];
 
